@@ -22,7 +22,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import com.jbpark.utility.JB_FileHandler;
+import com.jbpark.utility.JH_FileHandler;
 
 public class AddressMan {
 	static Connection conn = getConnection();
@@ -31,11 +31,11 @@ public class AddressMan {
 		logger.setLevel(Level.CONFIG);
 //		logger.setUseParentHandlers(false);
 		int LOG_ROTATION_COUNT = 10;
-		JB_FileHandler handler;
+		JH_FileHandler handler;
 		try {
 			String logFile = "D:/LOG/JB_module";
 			System.out.println("로그파일: " + logFile + ".*.log.*");
-			handler = new JB_FileHandler(logFile + ".%g.log", 0, LOG_ROTATION_COUNT);
+			handler = new JH_FileHandler(logFile + ".%g.log", 0, LOG_ROTATION_COUNT);
 			handler.setLevel(Level.CONFIG);
 			logger.addHandler(handler);
 		} catch (SecurityException | IOException e) {

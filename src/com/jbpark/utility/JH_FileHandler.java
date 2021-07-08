@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.util.logging.FileHandler;
 import java.util.logging.LogRecord;
 
-public class JB_FileHandler extends FileHandler {
-	public JB_FileHandler(String pattern, int limit, int count) 
+public class JH_FileHandler extends FileHandler {
+	public JH_FileHandler(String pattern, int limit, int count) 
 			throws IOException, SecurityException {
 		super(pattern, limit, count);
 	}

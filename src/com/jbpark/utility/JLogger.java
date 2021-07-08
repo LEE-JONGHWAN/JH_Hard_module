@@ -25,9 +25,9 @@ public class JLogger {
 		logger.setLevel(Level.CONFIG);
 		logger.setUseParentHandlers(false);
 		int LOG_ROTATION_COUNT = 30;
-		JB_FileHandler handler;
+		JH_FileHandler handler;
 		try {
-			handler = new JB_FileHandler(logFile, 0, LOG_ROTATION_COUNT);
+			handler = new JH_FileHandler(logFile, 0, LOG_ROTATION_COUNT);
 			handler.setLevel(Level.CONFIG);
 			logger.addHandler(handler);
 		} catch (NoSuchFileException e) {
