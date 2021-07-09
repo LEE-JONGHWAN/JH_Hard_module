@@ -22,7 +22,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import com.jbpark.utility.JH_FileHandler;
+import com.jhlee.utility.JH_FileHandler;
 
 public class AddressMan {
 	static Connection conn = getConnection();
